@@ -237,3 +237,7 @@
 .portfolio-ideas .theme .btn:hover{
     background-color: #685a4d;
 }
+
+.gallery{
+    width: 100%;
+}
