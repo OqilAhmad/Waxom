@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+    /* height:  ; */
+}
+
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999999 ;
+    margin-top: 39px;
+   margin-left: 30px;
+}
+.navbar ul.nav{
+    margin-right: 15%;
+}
+
+
+.container-fluid .row .nav .nav-item{
+    color: #fff;
+    font-family: 'montserrat' sans-serif;
+    font-size: 14px;
+    font-weight: 300px;
+}
+.container-fluid .row .nav .nav-item .nav-link{
+    color: #fff;
+}
+.container-fluid .row .nav .nav-item .nav-link:hover{
+    color:#c7b299;
+}
+.container-fluid .row .navbar-brand{
+    font-family: 'Raleway' sans-serif;
+    font-size: 34px;
+}
+
+.container-fluid .row .header-center{
+    position: absolute;
+    margin-top: 309px;
+    margin-left: 380px;
+    text-align: center;
+    justify-content: center;
+
+}
+.container-fluid .row .header-center span{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'raleway' sans-serif;
+    color: #fff;
+}
+.container-fluid .row .header-center h2{
+    font-size: 52px;
+    font-weight: 800;
+    font-family: 'Raleway' sans-serif;
+    color: #fff;
+}
+.container-fluid .row .header-center p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'montserrat' sans-serif;
+    color: #fff;
+    text-align: center;
+}
+.container-fluid .row .header-center .btn{
+    padding: 21px 38px;
+    font-family: 'raleway' sans-serif;
+    font-weight: 800;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+/* ==================Media================ */
+
+@media (min-width:768px) and (max-width:991px) {
+   
+ }
+ @media (min-width:992px) and (max-width:1199px) {
+  
+    
+ }
+ @media (min-width:1200px) {
+    
+   
+ }
+ 
+
+ /*////////////////////// Main//////////////// */
+
+ .about-us{
+     display: flex;
+     justify-content: center;
+     margin: 81px 0 113px 0;
+ }
+ .about-us .about1{
+     width: 269px;
+ }
+ .about1 h2{
+     font-size: 22px;
+     font-family: 'raleway' sans-serif;
+     font-weight: 600;
+     color: #555555;
+     text-align: center;
+ }
+.about-us .about1 p{
+    font-size: 14px;
+    font-family: 'raleway' sans-serif;
+    font-weight: 300;
+    color: #8c8c8c;
+    text-align: center;
+}
+ .about-us .about1 i{
+     font-size: 47px;
+     color: #555;
+     margin: 0 109px 34px;
+ }
+ .about-us .about1:hover{
+     border-bottom: 3px solid #c7b299 ;
+    
+ }
+ .about-us .about1 a:hover {
+     color:#c7b299;
+ }
+ .about-us .about1 h2:hover {
+    color:#c7b299;
+}
+.about-us .about1 i:hover {
+    color:#c7b299;
+}
+
+/*/////////////// portfolio ideas////////////// */
+
+.portfolio-ideas{
+    background-color: #fbfaf8;
+    padding-top: 83px;
+}
+.portfolio-ideas .portfolio-text h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'raleway' sans-serif;
+    color: #555555;
+    text-align: center;
+}
+.portfolio-ideas .portfolio-text p{
+    font-size: 16px;
+    font-weight:300;
+    font-family: 'montserrat' sans-serif;
+    color: #8c8c8c;
+    text-align: center;
+
+}
+
+.portfolio-ideas .portfolio-img {
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-ideas .portfolio-img .img-center {
+    position: relative;
+    margin-left: 0%;
+    margin-top: 20px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.portfolio-ideas .portfolio-img .img-left {
+    position: absolute;
+    margin-left: -17%;
+    margin-top: 85px;
+    cursor: pointer;
+}
+
+.portfolio-ideas .portfolio-img .img-right {
+  position: absolute;
+  margin-left: 17%;
+  margin-top: 85px;
+  cursor: pointer;
+}
+
+.portfolio-ideas .portfolio-img .img-left:hover {
+    z-index: 4;
+}
+
+.portfolio-ideas .portfolio-img .img-right:hover {
+    z-index: 4;
+}
+
+.portfolio-ideas .theme{
+    width: 100%;
+    height: 151px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+    background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+}
+
+.portfolio-ideas .theme .theme-txt h2{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'raleway' sans-serif;
+    color: #fff;
+}
+.portfolio-ideas .theme .theme-txt h2 span{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'raleway' sans-serif;
+    color: #c7b299;
+}
+.portfolio-ideas .theme .theme-txt p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'montserrat' sans-serif;
+    color: #615855;
+}
+.portfolio-ideas .theme .btn{
+    padding: 18px 29px;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: 'raleway';
+    background-color: #998675;
+    text-transform: uppercase;
+}
+.portfolio-ideas .theme .btn:hover{
+    background-color: #685a4d;
+}
