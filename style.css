@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+   
 }
 
 .container-fluid{
+    max-width: 100%;
     width: 100%;
-    /* height:  ; */
 }
 
 .navbar{
@@ -18,9 +19,7 @@
     margin-top: 39px;
    margin-left: 30px;
 }
-.navbar ul.nav{
-    margin-right: 15%;
-}
+
 
 
 .container-fluid .row .nav .nav-item{
@@ -41,11 +40,11 @@
 }
 
 .container-fluid .row .header-center{
+    width: 100%;
     position: absolute;
-    margin-top: 309px;
-    margin-left: 380px;
+    margin: 260px auto;
     text-align: center;
-    justify-content: center;
+    
 
 }
 .container-fluid .row .header-center span{
@@ -71,6 +70,7 @@
     padding: 21px 38px;
     font-family: 'raleway' sans-serif;
     font-weight: 800;
+
 }
 .carousel-indicators li {
     width: 10px;
@@ -78,12 +78,106 @@
     border-radius: 100%;
 }
 /* ==================Media================ */
+@media (max-width:767px) {
+    .container-fluid .row .header-center span{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .container-fluid .row .header-center h2{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .container-fluid .row .header-center p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .container-fluid .row .header-center .btn{
+        padding: 16px 30px;
+        font-weight: 600;
+    
+    }
+
+    .container-fluid .row .portfolio-ideas .portfolio-img{
+    
+    }
+
+    .container-fluid .row  .portfolio-ideas .portfolio-img .img-left{
+        width: 400px;
+        margin-top: 62px;
+    }
+    .container-fluid .row  .portfolio-ideas .portfolio-img .img-center{
+        width: 400px;
+       
+    }
+    .container-fluid .row  .portfolio-ideas .portfolio-img .img-right{
+        width: 400px;
+        margin-top: 62px;
+    }
+
+    .container-fluid .row .portfolio-ideas .theme .theme-txt h2{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .container-fluid .row .portfolio-ideas .theme .theme-txt h2 span{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .container-fluid .row .portfolio-ideas .theme .btn{
+        padding: 10px 16px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .container-fluid .row .portfolio-ideas .theme .theme-txt p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+ }
 
 @media (min-width:768px) and (max-width:991px) {
-   
+    .container-fluid .row .header-center span{
+        font-size: 26px;
+        font-weight: 500;
+        font-family: 'raleway' sans-serif;
+        color: #fff;
+    }
+    .container-fluid .row .header-center h2{
+        font-size: 36px;
+        font-weight: 800;
+        font-family: 'Raleway' sans-serif;
+        color: #fff;
+    }
+    .container-fluid .row .header-center p{
+        font-size: 8px;
+        font-weight: 300;
+        font-family: 'montserrat' sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    .container-fluid .row .header-center .btn{
+        padding: 10px 26px;
+        font-family: 'raleway' sans-serif;
+        font-weight: 600;
+    
+    }
  }
  @media (min-width:992px) and (max-width:1199px) {
-  
+    .container-fluid .row .header-center span{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .container-fluid .row .header-center h2{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .container-fluid .row .header-center p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .container-fluid .row .header-center .btn{
+        padding: 16px 30px;
+        font-weight: 600;
+    
+    }
     
  }
  @media (min-width:1200px) {
@@ -97,6 +191,7 @@
  .about-us{
      display: flex;
      justify-content: center;
+     flex-wrap: wrap;
      margin: 81px 0 113px 0;
  }
  .about-us .about1{
@@ -238,6 +333,137 @@
     background-color: #685a4d;
 }
 
-.gallery{
+.projects h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'raleway';
+    font-weight: 600;
+    color: #555;
+    margin-top: 80px;
+}
+
+.projects p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'montserrat';
+    font-weight: 300;
+    color: #8c8c8c;
+    margin-top: 27px;
+}
+
+.projects .tab-content .tab-pane .container .row .card{
+   
+}
+.projects .tab-content .tab-pane .container .row .card .card-body{
+    margin: 0 auto;
+}
+
+.projects .tab-content .tab-pane .container .row .card .card-body h3{
+    font-family: 'raleway';
+    font-size: 20px;
+    font-weight: 500;
+    color: #c7b299;
+    text-align: center;
+}
+.projects .tab-content .tab-pane .container .row .card .card-body span{
+    font-family: 'montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    color: #d1d1d1;
+    text-align: center;
+}
+.projects .nav-pills .nav-item .nav-link{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #8c8c8c;
+    border: 1px solid #ebebeb;
+    margin-right: 10px;
+}
+.projects .tab-content .tab-pane .container .row .card:hover{
+    background-color: #362f2d;
+}
+
+.projects .tab-content .tab-pane .container .row .card .card-body:hover{
+    color: #fff;
+}
+
+.projects .tab-content .tab-pane .container .row .card .card-body h3:hover{
+    color: #fff;
+}
+
+.projects .tab-content .tab-pane .container .row .col .card{
+    max-width: 100%;
     width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.6s ease-out ;
+
+}
+.projects .tab-content .tab-pane .container .row .card:hover{
+    transform: translateY(15px);
+} 
+.projects .tab-content .tab-pane .container .row .card:hover:before{
+    opacity: 1; 
+}
+.projects .tab-content .tab-pane .container .row .card:hover .card-link{
+    opacity: 1;
+    transform: translateY(0);
+}
+.projects .tab-content .tab-pane .container .row .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+} 
+.projects .tab-content .tab-pane .container .row .card .card-link{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+}
+.projects .tab-content .tab-pane .container .row .card .card-link {
+    width: 100%;
+    margin: 150px auto 0;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.projects .tab-content .tab-pane .container .row .card .card-link a i{
+    position: relative;
+    margin-right: 15px;
+    color: #fff;
+    font-size:  26px;
+}
+
+.projects .nav-pills .nav-item .active{
+    background-color: #998675;
+    color: white;
+    padding: 6px 27px 6px 27px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'montserrat';
+}
+.projects .btn{
+    display: block;
+    justify-content: center;
+    margin: 40px auto 80px ;
+    font-weight: 600;
+    font-family: 'montserrat';
+    font-size: 14px;
+    padding: 20px 50px 17px 50px;
+    background-color: #998675;
+    text-transform: uppercase;
 }
