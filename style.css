@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    list-style: none;
    
 }
 
@@ -131,6 +132,27 @@
         font-size: 12px;
         font-weight: 400;
     }
+
+    body .clients{
+        height: 110px;
+    }
+
+    body .clients .container .clients-text {
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+body .clients .container .clients-text i{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+   body .clients .container .clients-text h2{
+        font-size: 20px;
+        font-weight: 200;
+    }
+   body .clients .container .clients-text p{
+        font-size: 6px;
+        font-weight: 500;
+    }
  }
 
 @media (min-width:768px) and (max-width:991px) {
@@ -158,6 +180,28 @@
         font-family: 'raleway' sans-serif;
         font-weight: 600;
     
+    }
+
+    body .clients{
+        height: 150px;
+    }
+
+    body .clients .container .clients-text {
+        margin-top: 30px;
+        margin-right: 40px;
+        position: absolute;
+    }
+body .clients .container  .clients-text i{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+   body .clients .container .clients-text h2{
+        font-size: 28px;
+        font-weight: 200;
+    }
+   body .clients .container .clients-text p{
+        font-size: 6px;
+        font-weight: 500;
     }
  }
  @media (min-width:992px) and (max-width:1199px) {
@@ -466,4 +510,445 @@
     padding: 20px 50px 17px 50px;
     background-color: #998675;
     text-transform: uppercase;
+}
+
+/*///////////////// start presentation//////////////// */
+
+.presentation{
+    width: 100%;
+    height: 606px;
+}
+
+.presentation img{
+    width: 100%;
+    height: 606px;
+    position: absolute;
+
+}
+.presentation .video-text{
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 210px auto 0;
+}
+.presentation .video-text h2{
+    font-size:30px;
+    font-weight:500;
+    font-family: 'raleway';
+    color: #fff;
+    text-align: center;
+}
+.presentation .video-text p{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'montserrat';
+    color: #fff;
+    text-align: center;
+    margin-top: 17px;
+    line-height: 20px;
+}
+.presentation .video-text span{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c7b299;
+    text-align: center;
+    margin: 0 auto 0;
+}
+.presentation .video-text i{
+    font-size: 102px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0;
+    display: flex;
+    margin-bottom: 50px;
+    opacity: 0.6;
+}
+
+/*////////// start devices///////// */
+
+.container .devices{
+    display: flex;
+    margin-top: 80px;
+}
+.container .devices img{
+    width: 325px;
+}
+.container .devices .devices-text{
+    margin-top: 80px;
+}
+.container .devices .devices-text ul{
+    margin-left: 55px;
+}
+.container .devices .devices-text h3{
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'raleway';
+    color: #555555;
+
+}
+.container .devices .devices-text p{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'montserrat';
+    color: #8c8c8c;
+
+}
+.container .devices .devices-text ul li{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'montserrat';
+    color: #8c8c8c;
+
+}
+.container .devices .devices-text ul li i{
+    font-size: 21px;
+    color: #c7b299;
+    margin-right: 29px;
+}
+
+/* //////////////End devices///////////// */
+
+/* ////////////start clients///////////////// */
+
+.clients{
+    height: 300px;
+    background: rgb(40,31,28);
+    background: linear-gradient(49deg, rgba(40,31,28,1) 0%, rgba(72,49,37,1) 100%);
+}
+
+.clients .container .clients-text i{
+    width: 100%;
+    font-size: 50px;
+    color: #c7b299;
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: center;
+}
+.clients .container {
+    display: flex;
+    justify-content: center;
+   
+}
+.clients .container .clients-text{
+    margin: 68px 85px 0 0;
+}
+.clients .container .clients-text h2{
+    font-size: 48px;
+    font-weight: 200;
+    font-family: 'montserrat';
+    color: #fff;
+    text-align: center;
+}
+.clients .container .clients-text p{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'montserrat';
+    color: #c7b299;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*/////////////////// end clients/////////////// */
+
+/*///////////////// start post//////////////////// */
+
+.container .row .col .post {
+    margin-bottom: 142px;
+    margin-top: 83px;
+}
+.container .row .col .post .card-images{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 43px;
+}
+.container .row .col .post .card-images .card{
+    width: 370px;
+    margin: 0 15px 0;
+}
+.container .row .col .post h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'raleway';
+    color: #555555;
+    text-align: center;
+   
+}
+.container .row .col .post p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #8c8c8c;
+    text-align: center;
+}
+.card .date{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    margin: 20px;
+}
+.card .date h3{
+    width: 100%;
+    height: 35px;
+    background: #363636;
+    border-radius: 3px 3px 0 0;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'montserrat';
+    font-weight:300;
+    color: white;
+    margin: 0;
+   
+}
+.card .date span{
+    width: 100%;
+    height: 25px;
+    background: #252525;
+    border-radius: 0 0 3px 3px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin: 0;
+}
+.next-button{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto 80px;
+}
+.next-button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  .next-button  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .next-button .previous {
+    background-color: #f1f1f1;
+    color: black;
+    border: 2px solid #d4d4d4;
+    margin: o 4px;
+  }
+  
+  .next-button .next {
+    background-color: #fff;
+    color: black;
+    border: 2px solid #cfbda8;
+    margin: 0 4px;
+  }
+  
+  .next-button .round {
+    border-radius: 50%;
+  }
+
+  /*//////////// end posts//////// */
+
+  /*//////////// start images/////////// */
+
+  .images{
+      margin-top: 80px;
+      width: 100%;
+      height: 489px;
+      background-image: url(./img/photo1.png);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      
+  }
+  .images .logos {
+      margin: 140px 0 ;
+      margin-left: 60px;
+      position: absolute;
+    
+  }
+  .images .logos img{
+      margin: 0 45px;
+  }
+  /* //////////////end images ///////// */
+
+/*////////////// start footer ////////////// */
+
+footer{
+    width: 100%;
+    height: 550px;
+    background-color: #191919;
+    position: absolute;
+    border-top: 1px solid #fff;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto 80px;
+}
+.information .wahom-post{
+    width: 261px;
+    margin: 0 22px 0;
+    
+}
+.information .wahom-post h3{
+    font-size: 34px;
+    font-family: 'raleway';
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+   
+}
+.information .wahom-post p{
+    font-size: 14px;
+    font-family: 'montserrat';
+    font-weight: 300;
+    color: #555555;
+    margin-top: 31px;
+}
+.information .recent-posts{
+    width: 261px;
+    margin: 0 22px 0;
+}
+.information .recent-posts h3{
+    font-family: 'raleway';
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 33px;
+}
+.information .recent-posts .full-post{
+    border-bottom: 1px solid #252525;
+    margin-bottom: 19px;
+}
+.information .recent-posts .full-post p:hover{
+    color: #c7b299;
+}
+.information .recent-posts .full-post:last-child{
+    border: none;
+}
+.information .recent-posts .full-post span{
+    font-family: 'montserrat';
+    font-size: 12px;
+    font-weight: 300;
+    color: #363636;
+}
+.information .recent-posts .full-post p{
+    font-family: 'montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    color: #555555;
+}
+.information .twitter{
+    width: 272px;
+    margin: 0 22px 0;
+}
+.information .twitter h3{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 33px;
+}
+.information .twitter .full-twitter{
+    margin-bottom: 19px;
+    border-bottom: 1px solid #252525;
+}
+.information .twitter .full-twitter p:hover{
+    color: #c7b299;
+}
+.information .twitter .full-twitter:last-child{
+    border: none;
+}
+.information .twitter .full-twitter p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #555555;
+}
+.information .twitter .full-twitter span{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #363636;
+}
+.information .widget{
+    width: 272px;
+}
+.information .widget h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'raleway';
+    margin-bottom: 33px;
+    color: #fff;
+}
+.information .widget img{
+    margin-bottom: 5px;
+    width: 131px;
+}
+
+footer .footer-bottom{
+     height: 110px;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer-bottom .foot-left{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+footer .footer-bottom .foot-right{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+footer .footer-bottom .foot-left h3{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #555555;
+}
+footer .footer-bottom .foot-left .text{
+    height: 14px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #555555;
+    margin: 0 24px 0;
+    padding: 1px;
+   
+}
+
+footer .footer-bottom .foot-right h3{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #555555;
+}
+footer .footer-bottom .foot-right .text{
+    height: 14px;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'montserrat';
+    color: #555555;
+    margin: 0 24px 0;
+  
+}
+footer .footer-bottom .foot-left .text a{
+    text-decoration: none;
+    color: #555;
+}
+footer .footer-bottom .foot-left .text a:hover{
+    color: white;
+}
+footer .footer-bottom .foot-right .text a{
+    text-decoration: none;
+    color: #555;
+}
+footer .footer-bottom .foot-right .text a:hover{
+    color: white;
 }
