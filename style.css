@@ -21,7 +21,64 @@
    margin-left: 30px;
 }
 
+@media(max-width: 952px){
+    .overlay{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .overlay .closebtn{
+        margin: 20px 35px;
+        font-size: 55px;
+    }
+    .navbar .fa{
+        font-size: 35px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navbar .fa:hover{
+        color: #c7b299;
+    }
+    #overlay-content{
+        position: relative;
+        width: 100%; 
+        text-align: center; 
+        display: block;
+    }
+    #overlay-content .nav-item .nav-link{
+        font-family: 'montserrat' sans-serif;
+        font-size: 22px;
+        font-weight: 500px;
 
+    }
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block; 
+        transition: 0.3s;
+    }
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+     
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
 
 .container-fluid .row .nav .nav-item{
     color: #fff;
@@ -79,7 +136,14 @@
     border-radius: 100%;
 }
 /* ==================Media================ */
+
+
+
+
 @media (max-width:767px) {
+    body{
+        overflow-x: hidden;
+    }
     .container-fluid .row .header-center span{
         font-size: 30px;
         font-weight: 500;
@@ -97,22 +161,20 @@
         font-weight: 600;
     
     }
-
-    .container-fluid .row .portfolio-ideas .portfolio-img{
-    
-    }
-
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-left{
-        width: 400px;
-        margin-top: 62px;
+        width: 300px;
+        margin-top: 54px;
     }
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-center{
-        width: 400px;
+        width: 300px;
        
     }
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-right{
-        width: 400px;
-        margin-top: 62px;
+        width: 300px;
+        margin-top: 54px;
+    }
+    .portfolio-ideas .theme{
+        height: 130px;
     }
 
     .container-fluid .row .portfolio-ideas .theme .theme-txt h2{
@@ -132,10 +194,59 @@
         font-size: 12px;
         font-weight: 400;
     }
+    
+    .container .devices{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        overflow: hidden;
+    
+    }
+    .container .devices img{
+        width: 150px;
+        margin-top: 15px;
+        
+    }
+    .container .devices .devices-text{
+        margin-top: 50px;
+    }
+    .container .devices .devices-text ul{
+        margin: 0;
+    }
+    .container .devices .devices-text h3{
+        font-weight: 600;
+        font-size: 20px;
+        font-family: 'raleway';
+        color: #555555;
+        text-align: center;
+    
+    }
+    .container .devices .devices-text p{
+        font-weight: 500;
+        font-size: 10px;
+        font-family: 'montserrat';
+        color: #8c8c8c;
+        text-align: center;
+    
+    }
+    .container .devices .devices-text ul li{
+        font-weight: 500;
+        font-size: 12px;
+        font-family: 'montserrat';
+        color: #8c8c8c;
+    
+    }
+    .container .devices .devices-text ul li i{
+        font-size: 21px;
+        color: #c7b299;
+      
+    }
 
     body .clients{
         height: 110px;
     }
+   
 
     body .clients .container .clients-text {
         margin-top: 20px;
@@ -153,9 +264,36 @@ body .clients .container .clients-text i{
         font-size: 6px;
         font-weight: 500;
     }
+    .images{
+        margin-top: 40px;
+        width: 100%;
+        height: 389px;
+        background-image: url(./img/photo1.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        
+    }
+    .images .logos {
+        width: 100%;
+        margin: 0 !important;
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      
+    }
+    .images .logos img{
+        width: 120px;
+        margin: 40px 40px 0 !important; 
+     
+    }
  }
 
 @media (min-width:768px) and (max-width:991px) {
+    body{
+        overflow-x: hidden;
+    }
     .container-fluid .row .header-center span{
         font-size: 26px;
         font-weight: 500;
@@ -189,7 +327,6 @@ body .clients .container .clients-text i{
     body .clients .container .clients-text {
         margin-top: 30px;
         margin-right: 40px;
-        position: absolute;
     }
 body .clients .container  .clients-text i{
         font-size: 28px;
@@ -202,6 +339,37 @@ body .clients .container  .clients-text i{
    body .clients .container .clients-text p{
         font-size: 6px;
         font-weight: 500;
+    }
+
+    .images{
+        
+        margin-top: 40px;
+        width: 100%;
+        height: 489px;
+        background-image: url(./img/photo1.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        
+    }
+
+    .images .logos {
+       
+        position: absolute;
+        margin-top: 180px !important;
+        display: flex !important;
+        flex-flow: row wrap !important;
+       
+      
+    }
+    .images .logos img{
+        width: 140px;
+        margin: 0 30px 20px !important; 
+       
+      
+        
+        
+     
     }
  }
  @media (min-width:992px) and (max-width:1199px) {
@@ -758,7 +926,7 @@ body .clients .container  .clients-text i{
   .images{
       margin-top: 80px;
       width: 100%;
-      height: 489px;
+      height: 100vh;
       background-image: url(./img/photo1.png);
       background-position: center;
       background-size: cover;
@@ -766,9 +934,12 @@ body .clients .container  .clients-text i{
       
   }
   .images .logos {
-      margin: 140px 0 ;
-      margin-left: 60px;
-      position: absolute;
+      width: 100%;
+     position: absolute;
+      margin: 140px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     
   }
   .images .logos img{
@@ -788,7 +959,7 @@ footer{
 .information{
     display: flex;
     justify-content: center;
-    margin: 100px auto 80px;
+    margin: 100px auto 0;
 }
 .information .wahom-post{
     width: 261px;
@@ -951,4 +1122,245 @@ footer .footer-bottom .foot-right .text a{
 }
 footer .footer-bottom .foot-right .text a:hover{
     color: white;
+}
+
+@media(max-width:768px){
+   
+    .information{
+        height: 420px;
+        margin: 50px auto 0;
+    }
+    .information .wahom-post{
+        width: 100px;
+        margin: 0 8px 0;
+        
+    }
+    .information .wahom-post img{
+        width: 50px;
+    }
+    .information .wahom-post .btn {
+        width: 70px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .information .wahom-post h3{
+        font-size: 14px;
+       
+    }
+    .information .wahom-post p{
+        font-size: 8px;
+        margin-top: 11px;
+    }
+    .information .recent-posts{
+        width: 100px;
+        margin: 0 12px 0;
+    }
+    .information .recent-posts h3{
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .information .recent-posts .full-post{
+        border-bottom: 1px solid #252525;
+        margin-bottom: 10px;
+    }
+    
+    .information .recent-posts .full-post span{
+        font-family: 'montserrat';
+        font-size: 10px;
+        font-weight: 300;
+        color: #363636;
+    }
+    .information .recent-posts .full-post p{
+        font-size: 8px;
+    }
+    .information .twitter{
+        width: 100px;
+        margin: 0 10px 0;
+    }
+    .information .twitter h3{
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 13px;
+    }
+    .information .twitter .full-twitter{
+        margin-bottom: 10px;
+    }
+    .information .twitter .full-twitter p{
+        font-size: 8px;
+    }
+    .information .twitter .full-twitter span{
+        font-size: 8px;
+    }
+    .information .widget{
+        width: 100px;
+    }
+    .information .widget h3{
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+    .information .widget img{
+        margin-bottom: 5px;
+        width: 100px;
+    }
+    
+    footer .footer-bottom{
+         height: 70px;
+       
+    }
+    footer .footer-bottom .foot-left{
+        margin-top: 20px;
+    }
+    footer .footer-bottom .foot-right{
+        margin-top: 20px;
+        
+    }
+    footer .footer-bottom .foot-left h3{
+        font-size: 8px;
+    }
+    footer .footer-bottom .foot-left .text{
+        height: 8px;
+        font-size: 8px;
+        margin: 0 8px 0;
+        padding: 1px;
+       
+    }
+    
+    footer .footer-bottom .foot-right h3{
+        font-size: 8px;
+    }
+    footer .footer-bottom .foot-right .text{
+        height: 8px;
+        font-size: 8px;
+        margin: 0 8px 0;
+      
+    }
+}
+
+@media (min-width:769px) and (max-width:991px){
+    .information{
+        height: 420px;
+        margin: 50px auto 0;
+    }
+    .information .wahom-post{
+        width: 160px;
+        margin: 0 12px 0;
+        
+    }
+    .information .wahom-post img{
+        width: 80px;
+    }
+    .information .wahom-post .btn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .information .wahom-post h3{
+        font-size: 18px;
+       
+    }
+    .information .wahom-post p{
+        font-size: 12px;
+        margin-top: 14px;
+    }
+    .information .recent-posts{
+        width: 160px;
+        margin: 0 14px 0;
+    }
+    .information .recent-posts h3{
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .information .recent-posts .full-post{
+        border-bottom: 1px solid #252525;
+        margin-bottom: 14px;
+    }
+    
+    .information .recent-posts .full-post span{
+        font-family: 'montserrat';
+        font-size: 14px;
+        font-weight: 300;
+        color: #363636;
+    }
+    .information .recent-posts .full-post p{
+        font-size: 12px;
+    }
+    .information .twitter{
+        width: 160px;
+        margin: 0 10px 0;
+    }
+    .information .twitter h3{
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+    .information .twitter .full-twitter{
+        margin-bottom: 14px;
+    }
+    .information .twitter .full-twitter p{
+        font-size: 12px;
+    }
+    .information .twitter .full-twitter span{
+        font-size: 10px;
+    }
+    .information .widget{
+        width: 160px;
+    }
+    .information .widget h3{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .information .widget img{
+        margin-bottom: 5px;
+        width: 120px;
+    }
+    
+    footer .footer-bottom{
+         height: 70px;
+       
+    }
+    footer .footer-bottom .foot-left{
+        margin-top: 30px;
+    }
+    footer .footer-bottom .foot-right{
+        margin-top: 30px;
+        
+    }
+    footer .footer-bottom .foot-left h3{
+        font-size: 12px;
+    }
+    footer .footer-bottom .foot-left .text{
+        height: 12px;
+        font-size: 12px;
+        margin: 0 12px 0;
+        padding: 1px;
+       
+    }
+    
+    footer .footer-bottom .foot-right h3{
+        font-size: 12px;
+    }
+    footer .footer-bottom .foot-right .text{
+        height: 12px;
+        font-size: 12px;
+        margin: 0 12px 0;
+      
+    }
+}
+ 
+@media (min-width:992px) and (max-width:1180px){
+    .information{
+        height: 500px;
+        margin: 50px auto 0;
+    }
+    .information .widget{
+        width: 160px;
+    }
+    .information .widget h3{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .information .widget img{
+        margin-bottom: 5px;
+        width: 120px;
+    }
 }
