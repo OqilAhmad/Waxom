@@ -26,7 +26,7 @@
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 2 ;
         left: 0;
         top: 0;
         background-color: rgb(0,0,0);
@@ -79,6 +79,17 @@
       right: 35px;
     }
   }
+  @media(min-width:953px) and (max-width: 1400px){
+    .navbar .overlay .closebtn {
+        position: absolute;
+    top: -100%;
+      
+    }
+    .navbar #click{
+        position: absolute;
+       top: -100%;
+  }
+}
 
 .container-fluid .row .nav .nav-item{
     color: #fff;
