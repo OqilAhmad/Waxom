@@ -153,7 +153,7 @@
 
 @media (max-width:767px) {
     body{
-        overflow: hidden;
+        overflow: hidden auto;
     }
     .container-fluid .row .header-center span{
         font-size: 30px;
