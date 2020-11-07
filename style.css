@@ -153,7 +153,7 @@
 
 @media (max-width:767px) {
     body{
-        overflow: hidden auto;
+        overflow-x: hidden !important;
     }
     .container-fluid .row .header-center span{
         font-size: 30px;
@@ -172,20 +172,15 @@
         font-weight: 600;
     
     }
-    .navbar{
-        position: absolute;
-    }
-    .navbar i{
-       position: absolute;
-        margin-left: 360px !important;
-    }
+    
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-left{
         width: 300px;
         margin-top: 54px;
     }
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-center{
-        width: 300px;
-        height: 100vh;
+        width: 300px !important;
+        
+        
        
     }
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-right{
@@ -267,19 +262,19 @@
     }
    
 
-    body .clients .container .clients-text {
+    body .clients .container .row .col .clients-box {
         margin-top: 20px;
-        margin-right: 40px;
+        margin-right: 20px;
     }
-body .clients .container .clients-text i{
+body .clients .container  .row .col .clients-text i{
         font-size: 20px;
         margin-bottom: 8px;
     }
-   body .clients .container .clients-text h2{
+   body .clients .container  .row .col .clients-text h2{
         font-size: 20px;
         font-weight: 200;
     }
-   body .clients .container .clients-text p{
+   body .clients .container  .row .col .clients-text p{
         font-size: 6px;
         font-weight: 500;
     }
@@ -307,11 +302,21 @@ body .clients .container .clients-text i{
         margin: 40px 40px 0 !important; 
      
     }
+
+    .container .row .post .card-images{
+        display: flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+        
+    }
+    .container .row .post .card-images .card{
+        margin: 20px auto 0 !important;
+    }
  }
 
 @media (min-width:768px) and (max-width:991px) {
     body{
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     .container-fluid .row .header-center span{
         font-size: 26px;
@@ -342,22 +347,36 @@ body .clients .container .clients-text i{
     body .clients{
         height: 150px;
     }
-
+    body .clients .container{
+        height: 150px;
+    }
+    body .clients .container .row{
+        height: 150px;
+    }
+    body .clients .container .row .clients-box{
+        height: 150px !important;
+        margin: 15px 0 0 !important;
+       
+    }
     body .clients .container .clients-text {
-        margin-top: 30px;
+        margin-top: 10px;
         margin-right: 40px;
+        height: 150px;
     }
 body .clients .container  .clients-text i{
-        font-size: 28px;
+        font-size: 24px !important;
         margin-bottom: 10px;
+        margin: 0;
     }
    body .clients .container .clients-text h2{
-        font-size: 28px;
+        font-size: 15px !important;
         font-weight: 200;
+        margin: 0;
     }
    body .clients .container .clients-text p{
-        font-size: 6px;
+        font-size: 5px;
         font-weight: 500;
+
     }
 
     .images{
@@ -806,7 +825,7 @@ body .clients .container  .clients-text i{
     background: linear-gradient(49deg, rgba(40,31,28,1) 0%, rgba(72,49,37,1) 100%);
 }
 
-.clients .container .clients-text i{
+.clients .container  .row .col .clients-text i{
     width: 100%;
     font-size: 50px;
     color: #c7b299;
@@ -814,22 +833,23 @@ body .clients .container  .clients-text i{
     display: flex;
     justify-content: center;
 }
-.clients .container {
+.clients .container .row .clients-box{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+   
    
 }
-.clients .container .clients-text{
+.clients .container  .row .col .clients-box{
     margin: 68px 85px 0 0;
 }
-.clients .container .clients-text h2{
+.clients .container  .row .col .clients-text h2{
     font-size: 48px;
     font-weight: 200;
     font-family: 'montserrat';
     color: #fff;
     text-align: center;
 }
-.clients .container .clients-text p{
+.clients .container  .row .col .clients-text p{
     font-size: 12px;
     font-weight: 500;
     font-family: 'montserrat';
@@ -870,13 +890,13 @@ body .clients .container  .clients-text i{
     color: #8c8c8c;
     text-align: center;
 }
-.card .date{
+.row col .full-card .card .date{
     width: 50px;
     height: 60px;
     position: absolute;
     margin: 20px;
 }
-.card .date h3{
+.row col .full-card .card .date h3{
     width: 100%;
     height: 35px;
     background: #363636;
@@ -890,7 +910,7 @@ body .clients .container  .clients-text i{
     margin: 0;
    
 }
-.card .date span{
+.row col .full-card .card .date span{
     width: 100%;
     height: 25px;
     background: #252525;
