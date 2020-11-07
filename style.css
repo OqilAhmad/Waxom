@@ -172,6 +172,9 @@
         font-weight: 600;
     
     }
+    .navbar i{
+       margin-right: 40px;
+    }
     
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-left{
         width: 300px;
