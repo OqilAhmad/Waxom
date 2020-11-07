@@ -172,8 +172,16 @@
         font-weight: 600;
     
     }
-    .navbar i{
-       margin-right: 40px;
+    .navbar {
+       margin: 0;
+       display: ;
+    }
+    .navbar #click{
+        margin-left: 100px;
+    }
+    .navbar .navbar-brand img{
+        display: block;
+        margin-left: 26px !important;
     }
     
     .container-fluid .row  .portfolio-ideas .portfolio-img .img-left{
